@@ -1,18 +1,21 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	user-select: none;
+}
+
+.sidebarConteiner {
+	position: fixed;
+	top: 64;
+	height: calc(100vh - 64px);
+	background: white;
+	overflow-y: scroll;
+	width: 336px;
 }
 
 .sidebar {
-	background: white;
-	width: 336px;
-	height: calc(100vh - 64px);
-	position: fixed;
-	top: 64;
-	left: 0;
 	padding: 10px 0;
-	overflow-y: scroll;
+	width: 100%;
 }
 .sidebarMenu {
 	color: #555;
@@ -46,8 +49,8 @@
 
 .active {
 	border-left: 6px solid #005cb6;
-
 	color: #004180;
+	background: #edfafd;
 }
 
 .sidebarMenu ul li:hover {

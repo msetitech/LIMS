@@ -10,7 +10,7 @@ import {
 
 export default function TopBar() {
 	return (
-		<div>
+		<div className="navConeiner">
 			<nav>
 				<div className="logo">LIMS</div>
 				<div className="Search">
