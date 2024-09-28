@@ -56,3 +56,7 @@
 .sidebarMenu ul li:hover {
 	background: #edfafd;
 }
+
+.link {
+	text-decoration: none;
+}

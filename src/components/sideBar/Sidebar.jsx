@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./sidebar.css";
+import { Link } from "react-router-dom";
 import {
 	Analytics,
 	AssignmentTurnedIn,
@@ -31,14 +32,16 @@ export default function SideBar() {
 					<div className="sidebarMenu">
 						<h3>MAIN</h3>
 						<ul>
-							<li
-								onClick={() => handleActive("Dashboarrd")}
-								className={activeMenu === "Dashboarrd" ? "active" : ""}>
-								<span>
-									<Dashboard />
-								</span>
-								Dashboarrd
-							</li>
+							<Link to="/" className="link">
+								<li
+									onClick={() => handleActive("Dashboarrd")}
+									className={activeMenu === "Dashboarrd" ? "active" : ""}>
+									<span>
+										<Dashboard />
+									</span>
+									Dashboarrd
+								</li>
+							</Link>
 							<li
 								onClick={() => handleActive("Report")}
 								className={activeMenu === "Report" ? "active" : ""}>
@@ -52,14 +55,16 @@ export default function SideBar() {
 					<div className="sidebarMenu">
 						<h3>BOOKS</h3>
 						<ul>
-							<li
-								onClick={() => handleActive("Add Book")}
-								className={activeMenu === "Add Book" ? "active" : ""}>
-								<span>
-									<AutoStories />
-								</span>
-								Add Book
-							</li>
+							<Link to="/addBook" className="link">
+								<li
+									onClick={() => handleActive("Add Book")}
+									className={activeMenu === "Add Book" ? "active" : ""}>
+									<span>
+										<AutoStories />
+									</span>
+									Add Book
+								</li>
+							</Link>
 							<li
 								onClick={() => handleActive("Book List")}
 								className={activeMenu === "Book List" ? "active" : ""}>

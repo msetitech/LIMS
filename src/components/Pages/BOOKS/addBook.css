@@ -1,0 +1,172 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.addbookwrap {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	height: 100%;
+}
+
+.addbookheading form {
+	padding: 20px;
+	width: 100%;
+}
+.addbokinput {
+	position: relative;
+	margin: 20px 0;
+}
+.addbokinput input {
+	height: 48px;
+	width: 100%;
+	border-radius: 4px;
+	outline: none;
+	border: 1px solid #d3d3d3;
+	background: #fafafa;
+	padding: 10px;
+}
+
+.addbokinput label {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	color: #959595;
+}
+
+.addBookForm {
+	background: white;
+	border-radius: 4px;
+	height: 100%;
+	flex-basis: 300px;
+	max-width: 300px;
+	flex: 1;
+}
+
+.addbokinput input:focus + label,
+.addbokinput input:not(:placeholder-shown) + label {
+	top: -12px;
+	background: white;
+	padding: 0 4px;
+}
+
+.editionandyeat {
+	display: flex;
+	column-gap: 10px;
+}
+.addbookheading {
+	width: 100%;
+	z-index: -1;
+}
+
+.addbookheading h1 {
+	background: linear-gradient(185deg, #004180, #166ec6);
+	color: white;
+	font-size: larger;
+	height: 66px;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	font-family: "poppin", sans-serif;
+	border-radius: 4px 4px 0px 0px;
+}
+
+.addbookButton {
+	background: #005cb7;
+	color: white;
+	font-size: larger;
+	height: 56px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	justify-content: center;
+	cursor: pointer;
+}
+.addedbooksearch {
+	background: white;
+	height: 66px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.addingbooktable {
+	flex-grow: 1;
+	flex: 1;
+}
+.searchcontent {
+	display: flex;
+}
+
+.searchcontent input {
+	height: 46px;
+	width: 100%;
+	background: transparent;
+	border: 1px solid #004180;
+	border-radius: 4px 0px 0px 4px;
+	outline: none;
+	padding: 10px;
+}
+.addbooksearchicon {
+	height: 46px;
+	width: 48px;
+	background: #005cb7;
+	border-radius: 0px 4px 4px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.addbooksearchicon svg {
+	font-size: 32px !important;
+	color: white;
+}
+
+.addedBooklist {
+	background: white;
+	height: calc(100% - 86px);
+	display: flex;
+	flex-direction: column;
+}
+
+.addedBooklist .button {
+	width: 100%;
+	margin-top: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.button button {
+	height: 46px;
+	width: 120px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.addbookcancelbutton {
+	border: 1px solid gray;
+	color: gray;
+}
+
+.addbooksavebutton {
+	color: white;
+	background: #005cb7;
+	border: none;
+}
+
+.divtable {
+	height: 100%;
+	object-fit: contain;
+	padding: 10px;
+	width: 100%;
+	max-width: 300px;
+	min-width: 100%;
+	flex: 8;
+}

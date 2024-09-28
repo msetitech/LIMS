@@ -43,9 +43,10 @@ export default function Dashboard() {
 				</div>
 			</div>
 			<div className="dashboardGraph">
-                <div className="barChart">BardCahrt</div>
-                <div className="piChart">Pi Chart</div>
+				<div className="barChart">BardCahrt</div>
+				<div className="piChart">Pi Chart</div>
 			</div>
+			<div className="tasksummary">Task managment goes here</div>
 		</div>
 	);
 }

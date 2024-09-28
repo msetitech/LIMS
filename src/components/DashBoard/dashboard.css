@@ -48,10 +48,6 @@
 }
 
 .dashboardGraph {
-	/* display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-	gap: 20px; */
-
 	flex-wrap: wrap;
 	display: flex;
 	margin-top: 20px;
@@ -72,4 +68,12 @@
 	background: white;
 	border-radius: 4px;
 	height: 450px;
+}
+
+.tasksummary {
+	height: 550px;
+	background: white;
+	width: 100%;
+	margin-top: 20px;
+	border-radius: 4px;
 }
