@@ -65,14 +65,16 @@ export default function SideBar() {
 									Add Book
 								</li>
 							</Link>
-							<li
-								onClick={() => handleActive("Book List")}
-								className={activeMenu === "Book List" ? "active" : ""}>
-								<span>
-									<LibraryBooks />
-								</span>
-								Book List
-							</li>
+							<Link to="./bookList" className="link">
+								<li
+									onClick={() => handleActive("Book List")}
+									className={activeMenu === "Book List" ? "active" : ""}>
+									<span>
+										<LibraryBooks />
+									</span>
+									Book List
+								</li>
+							</Link>
 							<li
 								onClick={() => handleActive("Book Lent")}
 								className={activeMenu === "Book Lent" ? "active" : ""}>

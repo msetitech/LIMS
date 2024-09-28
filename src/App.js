@@ -4,8 +4,15 @@ import TopBar from "./Components/TopBar/TopBar";
 import { Routes, Route } from "react-router-dom";
 import "./app.css";
 import AddBooks from "./Components/Pages/BOOKS/AddBooks";
+import BookList from "./Components/Pages/BOOKS/BookList";
+import { useState } from "react";
+import { BookRows } from "./Components/Pages/BOOKDATA/BookData";
 
 function App() {
+	const [bookList, setBookList] = useState([BookRows]);
+	const book = (book) => {
+		setBookList(...bookList, book);
+	};
 	return (
 		<>
 			<TopBar />
@@ -21,7 +28,8 @@ function App() {
 						</div>
 						<Routes>
 							<Route path="/" element={<Dashboard />}></Route>
-							<Route path="/addBook" element={<AddBooks />}></Route>
+							<Route path="/addBook" element={<AddBooks book={book} />}></Route>
+							<Route path="/bookList" element={<BookList />}></Route>
 						</Routes>
 					</div>
 				</div>

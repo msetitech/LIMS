@@ -1,0 +1,16 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.booklistTable {
+	background: white;
+	padding: 10px;
+	border-radius: 6px;
+}
+.booklistholder {
+	min-width: 100%;
+	max-width: 300px;
+	overflow-x: scroll;
+}
