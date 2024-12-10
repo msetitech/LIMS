@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.topBookView {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.topBookView button {
+	background: #005cb7;
+	color: white;
+	border: none;
+	outline: none;
+	height: 46px;
+	width: 120px;
+	border-radius: 4px;
+}

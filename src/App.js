@@ -7,6 +7,7 @@ import AddBooks from "./Components/Pages/BOOKS/AddBooks";
 import BookList from "./Components/Pages/BOOKS/BookList";
 import { useState } from "react";
 import { BookRows } from "./Components/Pages/BOOKDATA/BookData";
+import BookView from "./Components/Pages/BOOKS/BookView";
 
 function App() {
 	const [bookList, setBookList] = useState([BookRows]);
@@ -30,6 +31,9 @@ function App() {
 							<Route path="/" element={<Dashboard />}></Route>
 							<Route path="/addBook" element={<AddBooks book={book} />}></Route>
 							<Route path="/bookList" element={<BookList />}></Route>
+							<Route
+								path="/bookview"
+								element={<BookView bookselected />}></Route>
 						</Routes>
 					</div>
 				</div>
